@@ -54,7 +54,7 @@ processors:
 // tag::kubernetes[]
 . Make sure your application logs to stdout/stderr.
 . Follow the {filebeat-ref}/running-on-kubernetes.html[Run Filebeat on Kubernetes] guide.
-. Enable https://www.elastic.co/guide/en/beats/filebeat/current/configuration-autodiscover-hints.html[hints-based autodiscover] (uncomment the corresponding section in `filebeat-kubernetes.yaml`).
+. Enable {filebeat-ref}/configuration-autodiscover-hints.html[hints-based autodiscover] (uncomment the corresponding section in `filebeat-kubernetes.yaml`).
 . Add these annotations to your pods that log using ECS loggers.
   This will make sure the logs are parsed appropriately.
 
@@ -74,7 +74,7 @@ annotations:
 // tag::docker[]
 . Make sure your application logs to stdout/stderr.
 . Follow the {filebeat-ref}/running-on-docker.html[Run Filebeat on Docker] guide.
-. Enable https://www.elastic.co/guide/en/beats/filebeat/current/configuration-autodiscover-hints.html[hints-based autodiscover].
+. Enable {filebeat-ref}/configuration-autodiscover-hints.html[hints-based autodiscover].
 . Add these labels to your containers that log using ECS loggers.
   This will make sure the logs are parsed appropriately.
 
